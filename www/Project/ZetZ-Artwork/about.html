@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ZetZ Artwork</title>
+	<link href="styles/style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<script src = "scripts/script.js" defer></script>
+	<style>
+html {
+	background-image: url("https://images.pexels.com/photos/3330118/pexels-photo-3330118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-size:100% 110%;
+}
+.text {
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size: 70px;
+	font-weight: 700;
+	letter-spacing:0.2em;
+	text-transform: uppercase;
+	color:white;
+}
+
+.text:before{
+	content: 'chanon';
+	color: #a63a56;
+	position: absolute;
+	width:0;
+	overflow:hidden;
+	transition: 0.9s;
+}
+.text:hover:before {
+	width:100%
+}
+	
+body {
+	overflow:scroll;
+	overflow-x: hidden;
+}
+	
+.container {
+	width:400px;
+	height:600px;
+	margin:auto;
+}
+.container p {
+	margin-top: 8em;
+	text-align: justify;
+	font-size:20px;
+	color: #e87d5d;
+	-webkit-text-stroke: 1px black;
+	font-family:"Courier New", Courier, monospace;
+	line-height: 2em;
+}
+	</style>
+  </head>
+  <body>
+  <header>
+	<img class ="logo" src="images/logo.png" alt="logo">
+	<nav>
+	<a href = "#" class = "toggle-button">
+	<span class ="bar"></span>
+	<span class ="bar"></span>
+	<span class ="bar"></span>
+	</a>
+		<ul class ="nav_links">
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "about.html">About Artist</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			</li>
+			<a class ="cta" href = "contact.html"><button>Contact</button></a>
+		</ul>
+	</nav>
+</header>
+<span class="text">chanon</span>
+<div class ="container">
+<p>Hello, My name is Rachanon beche and I'm from Thailand. I started to become interested in digital art around 2 years ago,But never tried it before until my mom bought a cheap tablet for me. When I first try out it was totoally a mess, I can't even draw a stick man properly, and eventually I begin to learn and adapt to it. Right now my drawing skill is not even close to the word artist, but I'm looking forward to improve it.</p>
+</div>
+  </body>
+  </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ZetZ Artwork</title>
+	<link href="styles/style.css" type="text/css" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<script src = "scripts/script.js" defer></script>
+	<style>
+html {
+ background-image: url("https://images.pexels.com/photos/3816394/pexels-photo-3816394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+ background-size:100% 360%;
+}
+.slide-container {
+	width:1280px;
+	height:800px;
+	margin-top:120px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	text-align: center;
+}
+
+.image-container {
+	width: 5120px;
+	height:800px;
+	position:relative;
+	transition:left 2s;
+}
+
+.slider-image {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.button-container {
+	top: -50px; 
+	position: relative;
+}
+
+.slider-button {
+	display: inline-block;
+	height:10px;
+	width:50px;
+	border-radius:5px;
+	background-color:white;
+}
+
+#slider-image-1:target ~ .image-container{
+	left:0px;
+}
+
+#slider-image-2:target ~ .image-container{
+	left: -1280px;
+}
+#slider-image-3:target ~ .image-container{
+	left:-2560px;
+}
+#slider-image-4:target ~ .image-container{
+	left:-3840px;
+}
+body {
+	overflow:scroll;
+	overflow-x: hidden;
+}
+h1 {
+	margin-left:auto;
+    margin-top: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	font-size: 50px;
+	letter-spacing:20px;
+	background: url("https://media.giphy.com/media/KJguq9IjQVGYU/giphy.gif");
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+}
+h2 {
+	margin-left:auto;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	font-size: 100px;
+	letter-spacing:20px;
+}
+	</style>
+  </head>
+  <body>
+  <h1>ArtWork</h1>
+  <h2>↓</h2>
+  <header>
+	<img class ="logo" src="images/logo.png" alt="logo">
+	<nav>
+	<a href = "#" class = "toggle-button">
+	<span class ="bar"></span>
+	<span class ="bar"></span>
+	<span class ="bar"></span>
+	</a>
+		<ul class ="nav_links">
+			<li><a href = "index.html">Home</a></li>
+			<li><a href = "about.html">About Artist</a></li>
+			<li><a href="artwork.html">Artwork</a></li>
+			</li>
+			<a class ="cta" href = "contact.html"><button>Contact</button></a>
+		</ul>
+	</nav>
+</header>
+<div class = "slide-container">
+	<span id ="slider-image-1"></span>
+	<span id ="slider-image-2"></span>
+	<span id ="slider-image-3"></span>
+	<span id ="slider-image-4"></span>
+	<div class = "image-container">
+		<img src = "images/pic1.png" class ="slider-image">
+		<img src = "images/pic2.png" class ="slider-image">
+		<img src = "images/pic3.png" class ="slider-image">
+		<img src = "images/pic4r.png" class ="slider-image">
+</div>
+		<div class ="button-container">
+		<a href= "#slider-image-1" class = "slider-button"></a>
+		<a href= "#slider-image-2" class = "slider-button"></a>
+		<a href= "#slider-image-3" class = "slider-button"></a>
+		<a href= "#slider-image-4" class = "slider-button"></a>
+		</div>
+	</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/pic1.png">
+    <img src="images/pic1.png" alt="lanscape">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/pic2.png">
+    <img src="images/pic2.png" alt="eyes">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/pic3.png">
+    <img src="images/pic3.png" alt="Thailand">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/pic4r.png">
+    <img src="images/pic4r.png" alt="bookcover">
+  </a>
+</div>
+  </body>
+  </html>

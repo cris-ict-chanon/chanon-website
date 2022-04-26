@@ -1,0 +1,113 @@
+header, main, footer, nav {
+  background-color:#b85042;
+  color: white;
+}
+
+
+
+html, body {
+	height: 100%;
+	margin: 0;
+	background-color: #b85042;
+}
+
+.flex-layout {
+	display: flex;
+	/* flex-direction + flex-wrap */
+	flex-flow: column nowrap;
+	background-color: #b85042;
+}
+
+
+body nav ul {
+	display: flex;
+	margin: 1em;
+	justify-content: center;
+}
+
+body nav li {	
+	list-style: none;
+}
+body nav li img {
+	width:50px;
+	height:50px;
+}
+
+/* our flex items are direct children of body:
+   header, main, and footer */
+body :is(header, footer) {
+	flex: 1 10%;
+}
+
+ main img {
+	border: 30px solid white;
+	height: 550px;
+	width:750px;
+}
+main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.text {
+	width:100px;
+	height:10px;
+	margin-left: 350px;
+	position: relative;
+}
+
+
+body main {
+	flex: 3 80%;
+}
+
+
+aside {
+	font-family: Courier, Monaco, monospace;
+	border-style:outset;
+	border-color:black;
+	font-size:20px;
+}
+
+label[for="toggle"] {
+    font-size: 3rem;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+    cursor: pointer;
+	  
+}
+
+input[type="checkbox"] {
+    position: fixed;
+	top: -100px;
+}
+
+aside {
+    color: white;
+    width: 200px;
+    height: 100%;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: -360px;
+	transition: 0.8s all;
+	background-color: #a7beae;
+}
+
+input[type=checkbox]:checked + aside {
+    left: 0px;
+}
+
+footer {
+	background-color: #a7beae;
+}
+
+
+.login{
+	margin-left:1650px;
+}
+
+
